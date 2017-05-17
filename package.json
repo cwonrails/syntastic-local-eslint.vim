@@ -1,0 +1,24 @@
+{
+  "name": "stylelint-local-eslint.vim",
+  "version": "1.0.0",
+  "description": "Make Syntastic use local install instead of global install",
+  "author": "cwonrails",
+  "repository": "cwonrails/syntastic-local-eslint.vim",
+  "keywords": [
+    "css",
+    "vim",
+    "plugin",
+    "stylelint"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "stylelint": "^7.10.1",
+    "stylelint-config-standard": "^16.0.0"
+  },
+  "contributors": [
+    {
+      "name": "Chris Watson",
+      "email": "chriswatsononline@gmail.com"
+    }
+  ]
+}
