@@ -21,7 +21,7 @@ endfun
 " if Stylelint_exec found successfully, set it for the current buffer
 fun! s:LetStylelintExec (Stylelint_exec)
   if a:Stylelint_exec isnot ''
-    let b:syntastic_javascript_Stylelint_exec = a:Stylelint_exec
+    let b:syntastic_css_Stylelint_exec = a:Stylelint_exec
   endif
 endfun
 
