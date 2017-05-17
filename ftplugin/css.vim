@@ -14,7 +14,7 @@ endfun
 " return full path of local Stylelint executable
 "  or an empty string if no executable found
 fun! s:GetStylelintExec (node_modules)
-  let Stylelint_guess = a:node_modules is '' ? '' : a:node_modules . '.bin/Stylelint'
+  let Stylelint_guess = a:node_modules is '' ? '' : a:node_modules . '.bin/stylelint.js'
   return exepath(Stylelint_guess)
 endfun
 
