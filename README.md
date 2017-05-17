@@ -1,3 +1,5 @@
+###_WARNING: NOT CURRENTLY WORKING, WOULD WELCOME HELP FROM VIM PLUGIN AUTHORS_###
+
 # syntastic-local-stylelint.vim
 
 Make [`Syntastic`](https://github.com/vim-syntastic/syntasticc) use local version of [`stylelint`](https://github.com/stylelint/stylelint) instead of any global installations.
