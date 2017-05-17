@@ -11,24 +11,24 @@ fun! s:GetNodeModulesAbsPath ()
   return path is '' ? '' : fnamemodify(path, ':p')
 endfun
 
-" return full path of local eslint executable
+" return full path of local Stylelint executable
 "  or an empty string if no executable found
-fun! s:GetEslintExec (node_modules)
-  let eslint_guess = a:node_modules is '' ? '' : a:node_modules . '.bin/eslint'
-  return exepath(eslint_guess)
+fun! s:GetStylelintExec (node_modules)
+  let Stylelint_guess = a:node_modules is '' ? '' : a:node_modules . '.bin/Stylelint'
+  return exepath(Stylelint_guess)
 endfun
 
-" if eslint_exec found successfully, set it for the current buffer
-fun! s:LetEslintExec (eslint_exec)
-  if a:eslint_exec isnot ''
-    let b:syntastic_javascript_eslint_exec = a:eslint_exec
+" if Stylelint_exec found successfully, set it for the current buffer
+fun! s:LetStylelintExec (Stylelint_exec)
+  if a:Stylelint_exec isnot ''
+    let b:syntastic_javascript_Stylelint_exec = a:Stylelint_exec
   endif
 endfun
 
 fun! s:main ()
   let node_modules = s:GetNodeModulesAbsPath()
-  let eslint_exec = s:GetEslintExec(node_modules)
-  call s:LetEslintExec(eslint_exec)
+  let Stylelint_exec = s:GetStylelintExec(node_modules)
+  call s:LetStylelintExec(Stylelint_exec)
 endfun
 
 call s:main()
